@@ -1,0 +1,113 @@
+
+body {
+    min-height: 100vh;
+    min-width: 100vh;
+    background-image: url(../assets/img/fondo-geometrico.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+.header { 
+    font-family: "bangers";
+    font-size: xx-large;
+    grid-area: header; 
+    background-color: rgb(128, 15, 111);
+    color: aliceblue;
+    text-align: center;
+}
+
+.aside, .grid-container{
+    font-family: sans-serif;
+
+}
+
+.aside { 
+    grid-area: aside;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: top;
+    border: 2px solid rgb(180, 97, 244);
+    background-color: rgb(154, 154, 233); 
+    min-width: 30vh;
+}
+.category-text{
+    padding: 0.5rem;
+}
+
+.grid-container {
+    display: grid;
+    background-color: transparent;
+    grid-template-areas:
+        'header header header header header header '
+        'aside aside main main main main '
+        'aside aside main main main main '
+        'aside aside main main main main '
+        'footer footer footer footer footer footer ';
+    grid-gap: 10px;
+    padding: 5px;
+}
+
+.grid-container > div {
+    background-color: transparent;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.container-section{
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-columns: auto auto auto ;
+    gap: 25px;
+
+}
+
+.card{
+    background-color: rgb(243, 239, 247);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid rgb(131, 20, 200);
+}
+
+.card button{
+    border-radius: 10%;
+    margin: 1rem;
+    padding: 0.5rem;
+    color: aliceblue;
+    background-color: rgb(230, 44, 224);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.card img{
+    margin-top: 2rem;
+    max-width: fit-content;
+    align-items: center;
+    width: 35%;
+}
+.card-title{
+    font-size: large;
+    font-style: bold;
+    margin: 0.5rem;  
+}
+
+.card-price{
+    font-size: medium;
+    font-style: italic;
+    color: rgb(51, 6, 93);
+    margin: 0.2rem;  
+}
+
+.footer { 
+    grid-area: footer;
+    background-color: rgb(240, 240, 247); 
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 0 0;
+    padding: 1rem;
+
+
+}
